@@ -1,4 +1,4 @@
-// Nama File   : Titik.java
+// Nama File   : MTitik.java
 // Deskripsi   : berisi atribut dan method dalam class Titik
 // Pembuat     : Syuraih Umar Khotthob 
 // Tanggal     : 24 Februari 2026
