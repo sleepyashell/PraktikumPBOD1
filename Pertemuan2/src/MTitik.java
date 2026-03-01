@@ -1,5 +1,5 @@
 // Nama File   : MTitik.java
-// Deskripsi   : berisi atribut dan method dalam class Titik
+// Deskripsi   : berisi program utama untuk menguji class Titik
 // Pembuat     : Syuraih Umar Khotthob 
 // Tanggal     : 24 Februari 2026
 
