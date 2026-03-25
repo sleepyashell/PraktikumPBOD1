@@ -1,4 +1,4 @@
-// Nama File   : Inheritance.java
+// Nama File   : BangunDatar.java
 // Deskripsi   : Realisasi class BangunDatar sebagai contoh untuk Inheritance (pewarisan) dalam Java
 // Pembuat     : Syuraih Umar Khotthob 
 // Tanggal     : 10 Maret 2026
