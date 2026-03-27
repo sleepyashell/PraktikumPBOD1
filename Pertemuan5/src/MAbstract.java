@@ -13,9 +13,11 @@ public class MAbstract {
 
     System.out.println("Apakah luas P1 sama dengan luas P2? " + P1.isEqualLuas(P2));
     System.out.println("Apakah luas L1 sama dengan luas L2? " + L1.isEqualLuas(L2));
+    System.out.println("Apakah keliling P1 sama dengan keliling P2? " + P1.isEqualKeliling(P2));
+    System.out.println("Apakah keliling L1 sama dengan keliling L2? " + L1.isEqualKeliling(L2));
 
-    System.out.println("Melakukan zoom in pada P1...");
-    P1.zoomIn();
-    System.out.println("Luas P1 setelah zoom in: " + P1.getLuas());
+    System.out.println("Melakukan zoom in pada P2...");
+    P2.zoomIn();
+    System.out.println("Luas P2 setelah zoom in: " + P2.getLuas());
     }
 }

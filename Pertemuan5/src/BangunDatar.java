@@ -1,29 +1,19 @@
-// Nama File   : Inheritance.java
-// Deskripsi   : Realisasi class BangunDatar sebagai contoh untuk Inheritance (pewarisan) dalam Java
+// Nama File   : BangunDatar.java
+// Deskripsi   : Realisasi class BangunDatar sebagai kelas abstrak yang menjadi superclass untuk berbagai jenis bangun datar
 // Pembuat     : Syuraih Umar Khotthob 
 // Tanggal     : 17 Maret 2026
 
-// public class BangunDatar {
-//     private int jmlSisi;
-//     private String warna;
-//     private String border;
-//     private static int counterBangunDatar = 0;
-
 public abstract class BangunDatar {
+    /***************** ATRIBUT *****************/
     protected int jmlSisi;
     protected String warna;
     protected String border;
     protected static int counterBangunDatar = 0;
 
+    /***************** METHOD *****************/
     public BangunDatar() {
         counterBangunDatar++;
     }
-
-    // final public class BangunDatar {
-    // protected int jmlSisi;
-    // protected String warna;
-    // protected String border;
-    // protected static int counterBangunDatar = 0;
 
     public BangunDatar(int jmlSisi, String warna, String border) {
         this.jmlSisi = jmlSisi;
@@ -70,13 +60,11 @@ public abstract class BangunDatar {
 
     public abstract double getKeliling();
 
-    // final public void printInfo() {
-    // System.out.println("Jumlah Sisi: " + jmlSisi);
-    // System.out.println("Warna: " + warna);
-    // System.out.println("Border: " + border);
-    // }
-
     public boolean isEqualLuas(BangunDatar X) {
         return this.getLuas() == X.getLuas();
+    }
+
+    public boolean isEqualKeliling(BangunDatar X) {
+        return this.getKeliling() == X.getKeliling();
     }
 }

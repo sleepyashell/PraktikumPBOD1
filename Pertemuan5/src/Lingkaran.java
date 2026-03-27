@@ -4,8 +4,10 @@
 // Tanggal     : 17 Maret 2026
 
 public class Lingkaran extends BangunDatar implements IResize {
+    /***************** ATRIBUT *****************/
     private double jari;
 
+    /***************** METHOD *****************/
     public Lingkaran() {
         setJmlSisi(1);
     }

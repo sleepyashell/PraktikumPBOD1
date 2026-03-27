@@ -4,8 +4,10 @@
 // Tanggal     : 17 Maret 2026
 
 public class Persegi extends BangunDatar implements IResize {
+    /***************** ATRIBUT *****************/
     private double sisi;
 
+    /***************** METHOD *****************/
     public Persegi() {
         setJmlSisi(4);
     }
