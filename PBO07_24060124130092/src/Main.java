@@ -1,7 +1,7 @@
-// NIM    : [NIM_ANDA]
-// Nama   : [NAMA_ANDA]
-// Tanggal: [TANGGAL]
-// Main - Implementasi semua soal Praktikum 7 Polimorfisme
+// Nama File: Mahasiswa2.java
+// NIM      : 24060124130092
+// Nama     : Syuraih Umar Khotthob
+// Tanggal  : 21 April 2026
 
 public class Main {
     public static void main(String[] args) {
