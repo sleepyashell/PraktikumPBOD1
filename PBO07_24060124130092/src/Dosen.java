@@ -1,22 +1,22 @@
-// Nama File: Dosen.java
-// NIM      : 24060124130092
-// Nama     : Syuraih Umar Khotthob
-// Tanggal  : 21 April 2026
+// Nama File   : Dosen.java
+// Deskripsi   : Realisasi class Dosen sebagai kelas turunan dari CivitasAkademika untuk realisasi polimorfisme Universal Inclusion
+// Pembuat     : Syuraih Umar Khotthob
+// Tanggal     : 21 April 2026
 
 public class Dosen extends CivitasAkademika {
-    private String nip;
+    private String NIP;
 
     public Dosen(String nip, String nama) {
         super(nama);
-        this.nip = nip;
+        this.NIP = nip;
     }
 
-    public String getNip() {
-        return nip;
+    public String getNIP() {
+        return NIP;
     }
 
     @Override
     public String getNomor() {
-        return nip;
+        return this.NIP;
     }
 }

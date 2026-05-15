@@ -1,7 +1,7 @@
-// Nama File: Burung.java
-// NIM      : 24060124130092
-// Nama     : Syuraih Umar Khotthob
-// Tanggal  : 21 April 2026
+// Nama File   : Burung.java
+// Deskripsi   : Realisasi class Burung sebagai kelas turunan dari Anabul untuk realisasi polimorfisme Universal Inclusion
+// Pembuat     : Syuraih Umar Khotthob
+// Tanggal     : 21 April 2026
 
 public class Burung extends Anabul {
     public Burung(String nama) {
@@ -9,12 +9,21 @@ public class Burung extends Anabul {
     }
 
     @Override
-    public void bersuara() {
-        System.out.println(nama + " (Burung) bersuara: Cuit-cuit!");
+    public void Gerak() {
+        System.out.println("Terbang");
     }
 
     @Override
-    public void gerak() {
-        System.out.println(nama + " (Burung) bergerak: Terbang di udara.");
+    public void Bersuara() {
+        System.out.println("Cuit-cuit!");
+    }
+
+    @Override
+    public void printInfo() {
+        super.printInfo();
+        System.out.println("Gerakan : ");
+        this.Gerak();
+        System.out.println("Suara   : ");
+        this.Bersuara();
     }
 }

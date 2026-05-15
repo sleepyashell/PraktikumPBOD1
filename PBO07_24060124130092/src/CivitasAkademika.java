@@ -1,17 +1,17 @@
-// Nama File: CivitasAkademika.java
-// NIM      : 24060124130092
-// Nama     : Syuraih Umar Khotthob
-// Tanggal  : 21 April 2026
+// Nama File   : CivitasAkademika.java
+// Deskripsi   : Realisasi abstract class CivitasAkademika sebagai kelas induk untuk realisasi polimorfisme Universal Inclusion
+// Pembuat     : Syuraih Umar Khotthob
+// Tanggal     : 21 April 2026
 
 public abstract class CivitasAkademika {
-    protected String nama;
+    protected String Nama;
 
     public CivitasAkademika(String nama) {
-        this.nama = nama;
+        this.Nama = nama;
     }
 
     public String getNama() {
-        return nama;
+        return Nama;
     }
 
     public abstract String getNomor();

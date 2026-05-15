@@ -1,7 +1,7 @@
-// Nama File: Kucing.java
-// NIM      : 24060124130092
-// Nama     : Syuraih Umar Khotthob
-// Tanggal  : 21 April 2026
+// Nama File   : Kucing.java
+// Deskripsi   : Realisasi class Kucing sebagai kelas turunan dari Anabul untuk realisasi polimorfisme Universal Inclusion
+// Pembuat     : Syuraih Umar Khotthob
+// Tanggal     : 21 April 2026
 
 public class Kucing extends Anabul {
     public Kucing(String nama) {
@@ -9,12 +9,21 @@ public class Kucing extends Anabul {
     }
 
     @Override
-    public void bersuara() {
-        System.out.println(nama + " (Kucing) bersuara: Meong!");
+    public void Gerak() {
+        System.out.println("Melata");
     }
 
     @Override
-    public void gerak() {
-        System.out.println(nama + " (Kucing) bergerak: Melata di tanah.");
+    public void Bersuara() {
+        System.out.println("Meong!");
+    }
+
+    @Override
+    public void printInfo() {
+        super.printInfo();
+        System.out.println("Gerakan : ");
+        this.Gerak();
+        System.out.println("Suara   : ");
+        this.Bersuara();
     }
 }

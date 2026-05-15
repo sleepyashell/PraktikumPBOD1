@@ -1,33 +1,35 @@
-// Nama File: Mahasiswa2.java
-// NIM      : 24060124130092
-// Nama     : Syuraih Umar Khotthob
-// Tanggal  : 21 April 2026
+// Nama File   : Mahasiswa2.java
+// Deskripsi   : Realisasi class Mahasiswa2 sebagai kelas turunan dari CivitasAkademika untuk realisasi polimorfisme Universal Inclusion
+// Pembuat     : Syuraih Umar Khotthob
+// Tanggal     : 21 April 2026
 
 public class Mahasiswa2 extends CivitasAkademika {
-    private String nim;
-    private Dosen dosenwali;
+    private String NIM;
+    private Dosen Dosenwali;
 
     public Mahasiswa2(String nim, String nama) {
         super(nama);
-        this.nim = nim;
-        this.dosenwali = null;
+        this.NIM = nim;
+        this.Dosenwali = null;
     }
-
-    public String getNim() { return nim; }
 
     @Override
-    public String getNomor() { return nim; }
-
-    public void setWali(Dosen dosen) {
-        this.dosenwali = dosen;
+    public String getNomor() {
+        return this.NIM;
     }
 
-    public Dosen getDosenwali() { return dosenwali; }
+    public Dosen getDosenwali() {
+        return Dosenwali;
+    }
+
+    public void setWali(Dosen dosen) {
+        this.Dosenwali = dosen;
+    }
 
     public void tampilDataMahasiswa() {
-        System.out.println("  NIM            : " + nim);
-        System.out.println("  Nama Mahasiswa : " + nama);
-        System.out.println("  Nama Dosenwali : " +
-            (dosenwali != null ? dosenwali.getNama() : "Belum ditetapkan"));
+        System.out.println("NIM            : " + this.getNomor());
+        System.out.println("Nama Mahasiswa : " + this.getNama());
+        System.out.println("Nama Dosenwali : " +
+                (Dosenwali != null ? Dosenwali.getNama() : "Belum ditetapkan"));
     }
 }

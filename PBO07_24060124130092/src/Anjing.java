@@ -1,7 +1,7 @@
-// Nama File: Anjing.java
-// NIM      : 24060124130092
-// Nama     : Syuraih Umar Khotthob
-// Tanggal  : 21 April 2026
+// Nama File   : Anjing.java
+// Deskripsi   : Realisasi class Anjing sebagai kelas turunan dari Anabul untuk realisasi polimorfisme Universal Inclusion
+// Pembuat     : Syuraih Umar Khotthob 
+// Tanggal     : 21 April 2026
 
 public class Anjing extends Anabul {
     public Anjing(String nama) {
@@ -9,12 +9,21 @@ public class Anjing extends Anabul {
     }
 
     @Override
-    public void bersuara() {
-        System.out.println(nama + " (Anjing) bersuara: Guk-guk!");
+    public void Gerak() {
+        System.out.println("Melata");
     }
 
     @Override
-    public void gerak() {
-        System.out.println(nama + " (Anjing) bergerak: Melata di tanah.");
+    public void Bersuara() {
+        System.out.println("Guk-guk!");
+    }
+
+    @Override
+    public void printInfo() {
+        super.printInfo();
+        System.out.println("Gerakan : ");
+        this.Gerak();
+        System.out.println("Suara   : ");
+        this.Bersuara();
     }
 }

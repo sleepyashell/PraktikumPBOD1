@@ -1,49 +1,49 @@
-// Nama File: Mahasiswa.java
-// NIM      : 24060124130092
-// Nama     : Syuraih Umar Khotthob
-// Tanggal  : 21 April 2026
+// Nama File   : Mahasiswa.java
+// Deskripsi   : Realisasi class Mahasiswa untuk realisasi polimorfisme ad hoc overloading
+// Pembuat     : Syuraih Umar Khotthob
+// Tanggal     : 21 April 2026
 
 public class Mahasiswa {
-    private String nim;
-    private String nama;
+    private String NIM;
+    private String Nama;
     private String programStudi;
 
     public Mahasiswa() {
-        this.nim = "-999";
-        this.nama = "n/a";
-        this.programStudi = "n/a";
+        NIM = "-999";
+        Nama = "n/a";
+        programStudi = "n/a";
     }
 
-    public Mahasiswa(String nim, String nama, String programStudi) {
-        this.nim = nim;
-        this.nama = nama;
-        this.programStudi = programStudi;
+    public Mahasiswa(String nim, String nama, String programstudi) {
+        this.NIM = nim;
+        this.Nama = nama;
+        this.programStudi = programstudi;
     }
 
     public Mahasiswa(Mahasiswa lain) {
-        this.nim = lain.nim;
-        this.nama = lain.nama;
+        this.NIM = lain.NIM;
+        this.Nama = lain.Nama;
         this.programStudi = lain.programStudi;
     }
 
-    public String getNim() {
-        return nim;
+    public String getNIM() {
+        return NIM;
     }
 
     public String getNama() {
-        return nama;
+        return Nama;
     }
 
     public String getProgramStudi() {
         return programStudi;
     }
 
-    public void setNim(String nim) {
-        this.nim = nim;
+    public void setNIM(String nim) {
+        this.NIM = nim;
     }
 
     public void setNama(String nama) {
-        this.nama = nama;
+        this.Nama = nama;
     }
 
     public void setProgramStudi() {
@@ -58,9 +58,9 @@ public class Mahasiswa {
         this.programStudi = lain.programStudi;
     }
 
-    public void tampil() {
-        System.out.println("NIM          : " + nim);
-        System.out.println("Nama         : " + nama);
-        System.out.println("Program Studi: " + programStudi);
+    public void printInfo() {
+        System.out.println("NIM          : " + this.getNIM());
+        System.out.println("Nama         : " + this.getNama());
+        System.out.println("Program Studi: " + this.getProgramStudi());
     }
 }
