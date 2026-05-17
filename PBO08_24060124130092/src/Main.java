@@ -5,6 +5,9 @@
 
 public class Main {
     public static void main(String[] args) {
+        // Kamus Lokal
+
+        // Algoritma
         System.out.println("============================================");
         System.out.println("  SOAL 1 - KUCING, ANGGORA, KEMBANGTELON");
         System.out.println("============================================");
