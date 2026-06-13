@@ -8,7 +8,9 @@ import javax.swing.DefaultListModel;
  */
 
 /**
- *
+ * Nama File: Gui,java
+ * Pembuat  : Syuraih Umar Khotthob
+ * NIM      : 24060124130092
  * @author syura
  */
 public class Gui extends javax.swing.JFrame {
